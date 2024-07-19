@@ -41,10 +41,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-    <string>your usage description here</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Our app requires access to your photo library to allow you to select and upload images to your app.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Our app requires access to your camera to allow you to take photos and upload them directly to your app.</string>
     <key>NSMicrophoneUsageDescription</key>
-    <string>your usage description here</string>
+    <string>Our app requires access to your microphone to record audio while capturing videos for uploading to your app.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
