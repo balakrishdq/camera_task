@@ -40,6 +40,7 @@ class HomePage extends HookWidget {
         final savedImage =
             await File(pickedFile.path).copy('${directory.path}/$fileName');
         images.value = [...images.value, savedImage];
+        await _saveImages(images.value);
       }
     }
 
@@ -49,7 +50,7 @@ class HomePage extends HookWidget {
         await imageToDelete.delete();
       }
       images.value = [...images.value]..removeAt(index);
-      _saveImages(images.value);
+      await _saveImages(images.value);
     }
 
     useEffect(() {
